@@ -1,0 +1,43 @@
+:root {
+  /* solid background color values */
+  --bgSolValR: 200;
+  --bgSolValG: 100;
+  --bgSolValB: 150;
+  
+  /* gradient background color values */
+  --bgGrad1ValR: 200;
+  --bgGrad1ValG: 200;
+  --bgGrad1ValB: 200;
+  --bgGrad2ValR: 200;
+  --bgGrad2ValG: 200;
+  --bgGrad2ValB: 200;
+  
+  /* background stroke value */
+  --bgStroke: black;
+  
+  /* text values */
+  --tValR: 250;
+  --tValG: 250;
+  --tValB: 250;
+  --tFont: "Brush Script MT";
+}
+
+#textpart {
+  font-family: var(--tFont);
+  fill: rgb(var(--tValR), var(--tValG), var(--tValB));
+}
+
+#squareid {
+   stroke: var(--bgStroke);
+   stroke-width: 10%;
+}
+
+.bgSolid {
+   fill: rgb(var(--bgSolValR), var(--bgSolValG), var(--bgSolValB));
+}
+
+.bgGradient {
+  fill: url(#Gradient1);
+}
+.stop1 { stop-color: rgb(var(--bgGrad1ValR), var(--bgGrad1ValG), var(--bgGrad1ValB)); }
+.stop2 { stop-color: rgb(var(--bgGrad2ValR), var(--bgGrad2ValG), var(--bgGrad2ValB)); }
